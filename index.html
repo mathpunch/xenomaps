@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xeno Maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <h1>Xeno Maps</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for a place..." autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <div id="map"></div>
+    <div id="sidebar">
+        <h2>Welcome to Xeno Maps!</h2>
+        <p>Now with Satellite & Street views. Search and explore the world.</p>
+        <ul>
+            <li>🔎 Search for places</li>
+            <li>🗺️ Toggle Street/Satellite views</li>
+            <li>📍 Click to place markers</li>
+            <li>🌐 Pan, zoom, and explore</li>
+        </ul>
+    </div>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Main JS -->
+    <script src="main.js"></script>
+</body>
+</html>
